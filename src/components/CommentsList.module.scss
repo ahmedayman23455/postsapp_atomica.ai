@@ -1,0 +1,23 @@
+@use "../styles/abstracts/" as *;
+@use "../styles/mixins/" as *;
+@use "../styles/variables/" as *;
+
+.commentsList {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  h1 {
+    @include heading4-sm-sb;
+    @include breakpoint(md) {
+      @include heading4-sb;
+    }
+    color: var(--primary-500);
+  }
+}
+
+.notFound {
+  @include message;
+  margin-top: 2rem !important;
+  margin-bottom: 4rem !important;
+}

@@ -1,0 +1,33 @@
+@use "./breakpoints" as *;
+@use "./typography" as *;
+
+
+@mixin button {
+   background: none;
+   border: none;
+   background-color: var(--primary-500) ; 
+   cursor: pointer;
+   font-weight: 600;
+   color: var(--white) ; 
+   text-align: center; 
+  &:hover { 
+    opacity: .9;
+  }
+ }
+
+
+@mixin message  {  
+
+  @include heading4-sb;
+  margin-top: 2rem;
+
+  @include breakpoint(sm) {
+    @include heading3-sb;
+  }
+
+  @include breakpoint(lg) {
+    @include heading2-sb;
+    margin-top: 6rem;
+  }
+  text-align: center;
+}

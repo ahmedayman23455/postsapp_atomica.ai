@@ -1,0 +1,97 @@
+@use "../styles/abstracts/" as *;
+@use "../styles/mixins/" as *;
+@use "../styles/variables/" as *;
+
+.posts {
+  margin-top: 3rem;
+
+  .container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 80ch;
+
+      h1 {
+        @include heading2_sb;
+      }
+
+      p {
+        @include paragraph3-regular;
+        color: var(--neutral-500);
+      }
+    }
+
+    .inputWrapper {
+      background-color: var(--neutral-100);
+      position: relative;
+      // padding: 0.7rem 1rem;
+      // padding-left: 2.8rem;
+      @include rounded-md;
+      width: 100%;
+
+      @include breakpoint(sm) {
+        width: 40ch;
+      }
+      svg {
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        color: var(--neutral-400);
+      }
+
+      input {
+        background-color: inherit;
+        border: none;
+        max-width: 100%;
+        outline: none;
+        color: var(--neutral-700);
+        @include paragraph3-regular;
+        padding: 0.7rem 1rem;
+        padding-left: 2.8rem;
+        @include rounded-md;
+
+        &::placeholder {
+          color: var(--neutral-400);
+        }
+      }
+      &:hover,
+      & input:focus {
+        outline: 1px solid var(--primary-300);
+      }
+    }
+
+    .posts_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @include breakpoint(sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint(lg) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      column-gap: rem(20px);
+      row-gap: rem(48px);
+    }
+
+    .loading,
+    .error,
+    .notFound {
+      @include message;
+    }
+
+    .error {
+      color: var(--error-500);
+    }
+  }
+}

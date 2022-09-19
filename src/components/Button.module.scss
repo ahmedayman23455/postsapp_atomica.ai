@@ -1,0 +1,21 @@
+@use "../styles/abstracts/" as *;
+@use "../styles/mixins/" as *;
+@use "../styles/variables/" as *;
+
+.button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-color: var(--primary-500);
+  color: white;
+  padding: 0.7rem 2rem;
+  display: block;
+  @include paragraph3-regular;
+  @include rounded-md;
+
+  @include hover {
+    &:hover {
+      background-color: var(--primary-300);
+    }
+  }
+}

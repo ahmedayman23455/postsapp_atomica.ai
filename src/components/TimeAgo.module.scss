@@ -1,0 +1,17 @@
+@use "../styles/abstracts/" as *;
+@use "../styles/mixins/" as *;
+@use "../styles/variables/" as *;
+
+.timeAgo {
+  color: var(--neutral-500);
+  @include heading6-sm-sb;
+  font-weight: 400;
+
+  
+  @include breakpoint(md) {
+    @include heading6-sb;
+    font-weight: 400;
+  }
+
+  text-transform: lowercase;
+}

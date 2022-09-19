@@ -1,0 +1,86 @@
+@use "../styles/abstracts/" as *;
+@use "../styles/mixins/" as *;
+@use "../styles/variables/" as *;
+
+@use "../styles/abstracts" as *;
+@use "../styles/mixins" as *;
+
+.modal__overlay {
+  position: fixed;
+  z-index: 5000;
+  inset: 0;
+  //   height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.615);
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(0, 20rem) minmax(1rem, 1fr);
+  place-items: center;
+
+  /* ---------- modal content --------- */
+  .modal__content {
+    //  min-height: clamp(20rem, 44vw, 35rem);
+    padding-inline: 0.5rem;
+    min-height: 19rem;
+    width: 100%;
+    background-color: white;
+    @include rounded-2xl;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    user-select: none; 
+
+    .modal_content_header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      img {
+        width: 5rem;
+      }
+    }
+    h2 {
+      @include heading4-sb;
+      text-transform: capitalize;
+
+      &.success {
+        color: var(--success-500);
+      }
+
+      &.error {
+        color: var(--error-500);
+      }
+    }
+
+    p {
+      @include subheading-regular;
+      color: var(--darkmode-500);
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .modal_content_btn {
+      &.success {
+        background-color: var(--success-500);
+        @include hover {
+          &:hover {
+            background-color: var(--success-300);
+          }
+        }
+      }
+
+      &.error {
+        background-color: var(--error-500);
+        @include hover {
+          &:hover {
+            background-color: var(--error-300);
+          }
+        }
+      }
+    }
+  }
+}

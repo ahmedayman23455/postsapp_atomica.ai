@@ -1,0 +1,353 @@
+@use "../abstracts" as *;
+
+/* 
+Inter font :  
+
+Regular > 400  
+Medium > 500   
+semibold > 600  
+bold > 700 
+extrabold > 800  
+*/
+
+/* ---------------------- display1 ---------------------- */
+@mixin display01_sb {
+  font-size: rem(72px);
+  font-weight: 600;
+  line-height: rem(80px);
+}
+@mixin display01_b {
+  font-size: rem(72px);
+  font-weight: 700;
+  line-height: rem(80px);
+}
+@mixin display01_eb {
+  font-size: rem(72px);
+  font-weight: 800;
+  line-height: rem(80px);
+}
+/* ---------------------- display2 ---------------------- */
+@mixin display02_sb {
+  font-size: rem(60px);
+  font-weight: 600;
+  line-height: rem(72px);
+}
+@mixin display02_b {
+  font-size: rem(60px);
+  font-weight: 700;
+  line-height: rem(72px);
+}
+@mixin display02_eb {
+  font-size: rem(60px);
+  font-weight: 800;
+  line-height: rem(72px);
+}
+/* ---------------------- heading1 ---------------------- */
+@mixin heading1-sb {
+  font-size: rem(48px);
+  font-weight: 600;
+  line-height: rem(56px);
+}
+@mixin heading1-b {
+  font-size: rem(48px);
+  font-weight: 700;
+  line-height: rem(56px);
+}
+@mixin heading1-eb {
+  font-size: rem(48px);
+  font-weight: 800;
+  line-height: rem(56px);
+}
+@mixin heading1-sm-sb {
+  font-size: rem(34px);
+  font-weight: 600;
+  line-height: rem(40px);
+}
+@mixin heading1-sm-b {
+  font-size: rem(34px);
+  font-weight: 700;
+  line-height: rem(40px);
+}
+@mixin heading1-sm-eb {
+  font-size: rem(34px);
+  font-weight: 800;
+  line-height: rem(40px);
+}
+
+/* ---------------------- heading2 ---------------------- */
+
+@mixin heading2-sb {
+  font-size: rem(39px);
+  font-weight: 600;
+  line-height: rem(47px);
+}
+@mixin heading2-b {
+  font-size: rem(39px);
+  font-weight: 700;
+  line-height: rem(47px);
+}
+@mixin heading2-eb {
+  font-size: rem(39px);
+  font-weight: 800;
+  line-height: rem(47px);
+}
+@mixin heading2-sm-sb {
+  font-size: rem(33px);
+  font-weight: 600;
+  line-height: rem(40px);
+}
+@mixin heading2-sm-b {
+  font-size: rem(33px);
+  font-weight: 700;
+  line-height: rem(40px);
+}
+@mixin heading2-sm-eb {
+  font-size: rem(33px);
+  font-weight: 800;
+  line-height: rem(40px);
+}
+/* ---------------------- heading3 ---------------------- */
+@mixin heading3-sb {
+  font-size: rem(33px);
+  font-weight: 600;
+  line-height: rem(40px);
+}
+@mixin heading3-b {
+  font-size: rem(33px);
+  font-weight: 700;
+  line-height: rem(40px);
+}
+@mixin heading3-eb {
+  font-size: rem(33px);
+  font-weight: 800;
+  line-height: rem(40px);
+}
+@mixin heading3-sm-sb {
+  font-size: rem(28px);
+  font-weight: 600;
+  line-height: rem(34px);
+}
+@mixin heading3-sm-b {
+  font-size: rem(28px);
+  font-weight: 700;
+  line-height: rem(34px);
+}
+@mixin heading3-sm-eb {
+  font-size: rem(28px);
+  font-weight: 800;
+  line-height: rem(34px);
+}
+/* ---------------------- heading4 ---------------------- */
+@mixin heading4-sb {
+  font-size: rem(28px);
+  font-weight: 600;
+  line-height: rem(34px);
+}
+@mixin heading4-b {
+  font-size: rem(28px);
+  font-weight: 700;
+  line-height: rem(34px);
+}
+@mixin heading4-eb {
+  font-size: rem(28px);
+  font-weight: 800;
+  line-height: rem(34px);
+}
+@mixin heading4-sm-sb {
+  font-size: rem(23px);
+  font-weight: 600;
+  line-height: rem(28px);
+}
+@mixin heading4-sm-b {
+  font-size: rem(23px);
+  font-weight: 700;
+  line-height: rem(28px);
+}
+@mixin heading4-sm-eb {
+  font-size: rem(23px);
+  font-weight: 800;
+  line-height: rem(28px);
+}
+/* ---------------------- heading5 ---------------------- */
+@mixin heading5-sb {
+  font-size: rem(23px);
+  font-weight: 600;
+  line-height: rem(28px);
+}
+@mixin heading5-b {
+  font-size: rem(23px);
+  font-weight: 700;
+  line-height: rem(28px);
+}
+@mixin heading5-eb {
+  font-size: rem(23px);
+  font-weight: 800;
+  line-height: rem(28px);
+}
+@mixin heading5-sm-sb {
+  font-size: rem(19px);
+  font-weight: 600;
+  line-height: rem(23px);
+}
+@mixin heading5-sm-b {
+  font-size: rem(19px);
+  font-weight: 700;
+  line-height: rem(23px);
+}
+@mixin heading5-sm-eb {
+  font-size: rem(19px);
+  font-weight: 800;
+  line-height: rem(23px);
+}
+/* ---------------------- heading6 ---------------------- */
+@mixin heading6-sb {
+  font-size: rem(19px);
+  font-weight: 600;
+  line-height: rem(23px);
+}
+@mixin heading6-b {
+  font-size: rem(19px);
+  font-weight: 700;
+  line-height: rem(23px);
+}
+@mixin heading6-eb {
+  font-size: rem(19px);
+  font-weight: 800;
+  line-height: rem(23px);
+}
+@mixin heading6-sm-sb {
+  font-size: rem(14px);
+  font-weight: 600;
+  line-height: rem(20px);
+}
+@mixin heading6-sm-b {
+  font-size: rem(14px);
+  font-weight: 700;
+  line-height: rem(20px);
+}
+@mixin heading6-sm-eb {
+  font-size: rem(14px);
+  font-weight: 800;
+  line-height: rem(20px);
+}
+/* --------------------- subheading --------------------- */
+@mixin subheading-regular {
+  font-size: rem(20px);
+  line-height: rem(28px);
+  font-weight: 400;
+}
+
+@mixin subheading-underline {
+  font-size: rem(20px);
+  line-height: rem(28px);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+@mixin subheading-sb {
+  font-size: rem(20px);
+  line-height: rem(28px);
+  font-weight: 600;
+}
+
+/* --------------------- paragraph1 --------------------- */
+@mixin paragraph1-regular {
+  font-size: rem(14px);
+  line-height: 1.675rem;
+  font-weight: 400;
+}
+
+@mixin paragraph1-underline {
+  font-size: rem(14px);
+  line-height: 1.675rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+@mixin paragraph1-sb {
+  font-size: rem(14px);
+  line-height: 1.675rem;
+  font-weight: 600;
+}
+
+/* --------------------- paragraph2 --------------------- */
+@mixin paragraph2-regular {
+  font-size: rem(16px);
+  line-height: 1.675rem;
+  font-weight: 400;
+}
+
+@mixin paragraph2-underline {
+  font-size: rem(16px);
+  line-height: 1.675rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+@mixin paragraph2-sb {
+  font-size: rem(16px);
+  line-height: 1.675rem;
+  font-weight: 600;
+}
+
+/* --------------------- paragraph3 --------------------- */
+@mixin paragraph3-regular {
+  font-size: rem(18px);
+  line-height: 1.675rem;
+  font-weight: 400;
+}
+
+@mixin paragraph3-underline {
+  font-size: rem(18px);
+  line-height: 1.675rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+@mixin paragraph3-sb {
+  font-size: rem(18px);
+  line-height: 1.675rem;
+  font-weight: 600;
+}
+
+/* --------------------- caption --------------------- */
+@mixin caption-regular {
+  font-size: rem(12px);
+  line-height: rem(18px);
+  font-weight: 400;
+}
+
+@mixin caption-sb {
+  font-size: rem(12px);
+  line-height: rem(18px);
+  font-weight: 600;
+}
+
+@mixin caption-CAP {
+  font-size: rem(12px);
+  line-height: rem(18px);
+  font-weight: 600;
+  letter-spacing: 8%;
+}
+
+/* --------------------- footer --------------------- */
+@mixin footer-regular {
+  font-size: rem(10px);
+  line-height: rem(14px);
+  font-weight: 400;
+  letter-spacing: 2%;
+}
+
+@mixin footer-sb {
+  font-size: rem(10px);
+  line-height: rem(14px);
+  font-weight: 600;
+  letter-spacing: 2%;
+}
+
+@mixin footer-CAP {
+  font-size: rem(10px);
+  line-height: rem(14px);
+  font-weight: 600;
+  letter-spacing: 8%;
+}

@@ -1,0 +1,50 @@
+@use "../styles/abstracts/" as *;
+@use "../styles/mixins/" as *;
+@use "../styles/variables/" as *;
+
+.home {
+  margin-top: 7rem;
+
+  .container {
+    @include container;
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;  
+      justify-content: center;
+      gap: 2rem;
+      max-width: 80ch;
+
+      .heading {
+        h1 {
+          @include heading2-sb;
+          @include breakpoint(sm) {
+            @include display02_sb;
+          }
+        }
+        p {
+          @include paragraph3-regular;
+          @include breakpoint(sm) {
+            @include subheading-regular;
+          }
+          color: var(--neutral-500);
+        }
+      }
+
+      .github {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        svg {
+          font-size: 3rem;
+        }
+        a {
+          @include subheading-sb;
+          text-transform: capitalize;
+          color: var;
+        }
+      }
+    }
+  }
+}
