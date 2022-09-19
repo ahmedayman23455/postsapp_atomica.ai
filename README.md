@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Posts App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+is a functional, responsive Website that help user to ( add/edit/delete/search )  post and (add/edit/delete) comments of each post. 
 
-## Available Scripts
+Watch the website (live demo): https://postsappatomica.herokuapp.com/  
 
-In the project directory, you can run:
+Note ▶: heroku server may be show this message ( There is no thing here,yet ) or styles not show. because the server after amount of times it sleeps and when ping 
+it causes a short delay for this first request, but subsequent requests will perform normally. </br>
+Solution 1 ▶ : Refreshing the page many times until website opened   
+Solution 2 ▶ : To run app on localhost  ( yarn install ) then (json-server --watch ./db.json --port 3500 )  
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+####  &#9881; Packages that used :
+##### 1-  Json-server (api) </br>
+##### 2-  heroku (deployment)
+##### 3- React  (frontend library)
+##### 4 - Sass modules (styling) 
+##### 5- Redux toolkit (global state management)  
+##### 6- Redux thunk middleware (Make async actions outside components)   
+##### 7-  Axios    ( CRUD methods) 
+##### 8-  Date-fns (date formatting) 
+##### 9-  Framer-motion (animation) 
+##### 10-  React-icons (icons)  
+##### 11- Hamburger-react (icon of mobile navbar) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 🎨 Design : 
+I designd a simple UI design by using figma
 
-### `npm test`
+#### 📷 Screenshots :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![screencapture-postsappatomica-herokuapp-posts-2022-09-19-08_42_16](https://user-images.githubusercontent.com/57132693/190964346-44c69827-d545-4e5a-81ac-21d470a8e630.png)
+![screencapture-postsappatomica-herokuapp-posts-1kaayPe2b8Y9s8NoKE4G2-2022-09-19-08_42_31](https://user-images.githubusercontent.com/57132693/190964366-364eea46-d609-4cb5-9f0c-8fbc36e38ee2.png)
+![screencapture-postsappatomica-herokuapp-posts-1kaayPe2b8Y9s8NoKE4G2-editpost-2022-09-19-08_42_41](https://user-images.githubusercontent.com/57132693/190964382-627ffffe-fa4a-42f6-856c-d45f59f86416.png)
+![screencapture-postsappatomica-herokuapp-posts-1kaayPe2b8Y9s8NoKE4G2-8ZQiWxqzJuo5km5po6lMy-2022-09-19-08_43_06](https://user-images.githubusercontent.com/57132693/190964385-2f66706b-dec9-47d6-b771-8f206ce0a5a4.png)
